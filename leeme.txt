@@ -1,1 +1,1 @@
-leeme
+Archivo de configuraciones basicas del sistema
