@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/03/2017, 11:52:21 AM
+    Author     : yukit
+*/
+
+html, body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px !important;
+	width:auto;
+	height: 100%;
+}
+article{
+	background-color: transparent;
+}
+.container{
+	padding: 0 !important;
+	width: 100%;
+}
+.mp_none{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#bar-nav li a{
+	border-radius: 0px;	
+	padding: 3px 6px;
+}
+#section-head{
+	margin-bottom: 0.2em;
+}
+#section-bar-state{
+	position: absolute;
+    bottom: 0%;
+}
+#section-working-area{
+	margin-top: -3px !important;
+}
+#logo{
+	width: 25px;
+	height: 25px;
+	margin: 2px auto;
+}
+#bar-state{
+	height: 30px;
+	background-color: #ffb35a !important;
+}
+#bar-module{
+	height: 30px;
+	background-color: #fff !important;
+	padding: 5px 0;
+	clear: both;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+}
+#bar-nav{
+	background-color: #ddd;
+}
+#bar-tools{
+	background-color: #efefef;
+	padding-top: 4px !important;
+}
+.nav-modules{
+	float: left;
+	left: 50%;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+
+}
+.nav-modules li {
+	float: left;
+	position: relative;
+	right: 50%;
+}
+.nav-modules li a{
+	margin: 0 auto;
+	padding: 0 5px;
+}
+.nav-menu{
+	margin: 0 auto;
+	padding: 0;
+}
+.nav-menu li a{
+	margin: 0 auto;
+	padding: 0 5px;
+}
+#bar-state article{
+	height: 30px;
+	display: inline;
+	vertical-align: middle;
+}
+.material-icons{
+	font-size: 16px;
+}
+.bar-state-date{
+	text-align: right;
+	padding-bottom: 4px;
+}
+.bar-state-name{
+	padding-top: 4px;
+}

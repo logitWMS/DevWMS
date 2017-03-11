@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/03/2017, 11:58:17 AM
+    Author     : yukit
+*/
+
+.basic_style_mod_state{
+
+}
+.bar-state-logo{
+	text-align: left;
+}
+.bar-state-name{
+	text-align: center;
+	text-transform: uppercase;
+}
+#working-tabs ul li a:hover, #nav-tabs .active a{
+	/*border-top: 2px solid #ffb35a;*/
+}
+#working-tabs ul li a{
+	border-radius: 0px;
+	border-top: 2px solid transparent;
+}
+#section-head{
+	border-bottom: 2px solid #ffb35a;
+}
+/*.active{
+	border-top: 2px solid #ffb35a;
+}*/
+
