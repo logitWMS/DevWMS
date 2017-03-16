@@ -12,6 +12,10 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="${pageContext.request.contextPath}/public/css/default_theme.css" rel="stylesheet">
     </head>
+    <div></div>
+    
+    
+    
     <body class="container">
         <div class="row">
             <div class="panel panel-default header_pqrs">

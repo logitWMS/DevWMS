@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  *
  * @author JHONE
+ * para el modulo de PQRS
  */
 @Controller
 public class HomeController {
