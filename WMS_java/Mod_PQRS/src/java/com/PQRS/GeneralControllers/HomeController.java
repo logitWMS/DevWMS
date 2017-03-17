@@ -55,4 +55,10 @@ public class HomeController {
         model.setViewName("suggestions/homeSuggestion");
         return model;
     }
+    @RequestMapping("login/login.htm")
+    public ModelAndView login(){
+        ModelAndView model = new ModelAndView();
+        model.setViewName("login/login");
+        return model;
+    }
 }

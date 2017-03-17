@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 package com.erp.modpqrs.general;
+
+import com.bpo.erp.modpqrs.conections.Conections;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,12 +19,31 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class homeController {
+    
+    private JdbcTemplate jdbcTemplate;
+    
+    public homeController(){
+        
+        Conections con = new Conections();
+        this.jdbcTemplate=new JdbcTemplate(con.conection());
+        
+    }
     @RequestMapping("home_pqrs.htm")
     public ModelAndView home(HttpServletRequest generalDates){
         ModelAndView model = new ModelAndView();
         model.setViewName("home_pqrs");
         String user= generalDates.getParameter("userid");
         model.addObject("userid",user);
+        return model;
+    }
+    
+    @RequestMapping("login/login.htm")
+    public ModelAndView login(){
+        ModelAndView model = new ModelAndView();
+        String sql = "select * from records_t0018";
+        List datos = this.jdbcTemplate.queryForList(sql);
+        model.addObject("datos", datos);
+        model.setViewName("login/login");
         return model;
     }
    /* @RequestMapping("nosotros.htm")

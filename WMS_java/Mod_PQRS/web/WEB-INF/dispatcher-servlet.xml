@@ -21,6 +21,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="home_pqrs.htm">homeController</prop>
+                <prop key="login/login.htm">homeController</prop>
             </props>
         </property>
     </bean>
